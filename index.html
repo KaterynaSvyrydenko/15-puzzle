@@ -4,29 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>15-puzzle</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class='layout'>
-        <div class="layout_container" id='#container'>
-            <div class="element" id='#elem'>1</div>
-            <div class="element" id='#elem'>2</div>
-            <div class="element" id='#elem'>3</div>
-            <div class="element" id='#elem'>4</div>
-            <div class="element" id='#elem'>5</div>
-            <div class="element" id='#elem'>6</div>
-            <div class="element" id='#elem'>7</div>
-            <div class="element" id='#elem'>8</div>
-            <div class="element" id='#elem'>9</div>
-            <div class="element" id='#elem'>10</div>
-            <div class="element" id='#elem'>11</div>
-            <div class="element" id='#elem'>12</div>
-            <div class="element" id='#elem'>13</div>
-            <div class="element" id='#elem'>14</div>
-            <div class="element" id='#elem'>15</div>
-            <div class="element element_empty" id='#elem_empty'></div>
+        <div class="layout_rules">
+            <h1 class="rules_name">15-puzzle</h1>
+            <p class="rules_text">Move tiles in grid to order them from 1 to 15. To move a tile you can click on it.</p> 
         </div>
+        <div class="layout_container" id='#container'>
+            <div class="container_element">
+                <div class="element" id='#elem'>1</div>
+            </div>
+            <div class="container_element">
+                <div class="element" id='#elem'>2</div>
+            </div>
+            <div class="container_element">
+                <div class="element" id='#elem'>3</div>
+            </div>
+            <div class="container_element">
+                <div class="element" id='#elem'>4</div>
+            </div>
+            <div class="container_element">
+                <div class="element" id='#elem'>5</div>
+            </div>
+            <div class="container_element">
+                <div class="element" id='#elem'>6</div>
+            </div>
+            <div class="container_element">
+                <div class="element" id='#elem'>7</div>
+            </div>
+            <div class="container_element">
+                <div class="element" id='#elem'>8</div>
+            </div>
+            <div class="container_element">
+                <div class="element" id='#elem'>9</div>
+            </div>
+             <div class="container_element">
+                <div class="element" id='#elem'>10</div>
+            </div>
+            <div class="container_element">
+                <div class="element" id='#elem'>11</div>
+            </div>
+            <div class="container_element">
+                <div class="element" id='#elem'>12</div>
+            </div>
+            <div class="container_element">
+                <div class="element" id='#elem'>13</div>
+            </div>
+            <div class="container_element">
+                <div class="element" id='#elem'>14</div>
+            </div>
+            <div class="container_element">
+                <div class="element" id='#elem'>15</div>
+            </div>
+            <div class="container_element">
+                <div class="element element_empty" id='#elem_empty'></div>
+            </div>
+        </div>
+        <div class="timer_layout timer_main">
+            <div class="timer_text">Your Time:</div>
+            <div class="timer" id='#timer'>00:00:00.00</div>
+        </div>
+        <div class='popup_layout' id='#popup'>
+            <div class="popup_container">
+                <div class="winner_layout">
+                    <div class="winner">congratulations</div>
+                </div>
+                <div class="timer_layout">
+                    <div class="timer" id='#timer_result'></div>
+                </div>
+                <div class="click_counter_layout">
+                    <div class="click_counter_text">Количество ходов:</div>  
+                    <div class="click_counter_number" id='#clickCounterNumber'></div>       
+                </div>
+                <div class="start_layout" id='#start'>
+                    <a href="#" class="start">START AGAIN</a>
+                </div>
+            </div>
+        </div> 
     </div>
     <script src="app.js"></script>
 </body>

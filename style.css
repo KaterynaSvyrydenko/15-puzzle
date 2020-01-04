@@ -4,35 +4,154 @@ body {
 .layout {
     width: 100%;
     height: 100vh; 
-    margin: 0 auto 0; 
     display: flex;
+    flex-direction: column;
     align-items: center;
-    background-color: cadetblue;
+    position: relative;
+    background-color: #8AB1B1;
 }
+/* Rules START */
+.layout_rules{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 100px 0 30px;
+    text-align: center;
+    color: darkgoldenrod;
+    text-shadow: 2px 2px 2px rgb(17, 14, 14);
+}
+.rules_name{
+    font-size: 45px;
+}
+
+.rules_text{
+    font-size: 32px;
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto;
+}
+/* Rules FINISH */
+
 .layout_container {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 0;
-    margin: 0 auto;
-    width: 320px;
-    height: 320px;
+    margin: 0 auto 15px;
+    width: 368px;
+    height: 368px;
     display: flex;
     flex-wrap: wrap;
     border: 1px solid black;
 }
+
+.container_element{
+    border: 1px solid black;
+    padding: 5px;
+    color: white;
+}
+
 .element {
     width: 80px;
     height: 80px;
-    border: 1px solid black;
     border-collapse: collapse;
-    background-color: darkgoldenrod;
+    background-color: slategray;
     text-align: center;
-    padding-top: 30px;
+    font-size: 45px;
+    padding-top: 15px;
     box-sizing: border-box;
+    box-shadow: inset 1px 0px 6px 1px;
+    text-shadow: 2px 2px 2px rgb(17, 14, 14);
+    cursor: pointer;
+    transition: background-color 0.6s;
 }
 .element_empty {
     background-color: white;
+    transition: background-color 0.6s;
 }
+
+
+/* Popup START */
+.popup_layout{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(192, 192, 192, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.popup_container{
+    width: 435px;
+    height: 435px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: slategray;
+    box-shadow: 0px 1px 10px 0px;
+    justify-content: center;
+}
+
+.start_layout{
+    display: flex;
+    justify-content: center;
+}
+
+.start{
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px;
+    background-color: cadetblue;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 4px 0px;
+    text-shadow: 2px 2px 2px rgb(17, 14, 14)
+}
+
+/* Winner START */
+.winner_layout{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 32px;
+    text-shadow: 2px 2px 2px rgb(17, 14, 14)   
+}
+/* Winner FINISH */
+
+
+/* Timer START */
+.timer{
+    display: flex;
+    font-size: 32px;
+    line-height: 1;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+.timer_text{
+    font-size: 22px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+/* Timer FINISH */
+
+
+/* ClickCounter START */
+.click_counter_layout{
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    padding-bottom: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.click_counter_number{
+    padding-left: 5px;
+}
+
+
+/* Popup FINISH */
